@@ -35,12 +35,12 @@ let personas = [
   },
   {
     name: 'Elena',
-    number: '657115131',
+    number: '655232521',
     id: 4
   },
   {
     name: 'Sara',
-    number: '646639276',
+    number: '646235426',
     id: 5
   }
 ]
@@ -49,13 +49,13 @@ let personas = [
 // request: contiene toda la informacion de la solicitud http
 // response se utiliza para definir como se esponde a la solicitud
 app.get('/', (request, response) => {
-  response.send('<h1>Hello Worldddd</h1>')
+  response.send('<h1>Guia de telefonos API</h1><p>/api/info</p><p>/api/persons</p>')
 })
 
 app.get('/api/info', (request, response) => {
   const todayTime = new Date()
   const numberOfPersons = personas.length
-  response.send(`<h1>Bienvenido a la agenda de telefonos</h1><p>La agenda tiene ${numberOfPersons} personas</p><p>${todayTime}</p>`)
+  response.send(`<h1>Bienvenido a la agenda de telefonos</h1><p>La agenda tiene ${numberOfPersons} contactos</p><p>${todayTime}</p>`)
 })
 
 app.get('/api/persons', (request, response) => {
