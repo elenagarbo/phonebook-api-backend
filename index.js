@@ -30,7 +30,7 @@ let personas = [
   },
   {
     name: 'Dan Abramov',
-    number: '12-43-234345',
+    number: '165365356',
     id: 3
   },
   {
@@ -40,7 +40,7 @@ let personas = [
   },
   {
     name: 'Sara',
-    number: '646235426',
+    number: '435427383',
     id: 5
   }
 ]
